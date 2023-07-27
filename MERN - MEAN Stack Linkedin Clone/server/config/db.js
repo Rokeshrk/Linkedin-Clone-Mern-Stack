@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 //const config = require('config');
-const db = "mongodb://127.0.0.1:27017/devconnector43"
+const db = "mongodb+srv://Rokeshrk:nadAUGhIf6ItHYPs@cluster0.ynacqbs.mongodb.net/devconnector?retryWrites=true&w=majority"
 
 const connectDB = async () => {
   try {
