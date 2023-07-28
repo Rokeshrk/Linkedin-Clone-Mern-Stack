@@ -11,13 +11,6 @@ connectDB();
 app.use(express.json());
 
 // Define Routes
-app.use(cors(
-  {
-    orgigin:["https://deploy-mern-1whq.vercel.com"],
-    methods:["GET", "POST"],
-    credentials: true
-  }
-));
 
 app.get("/",(req, res) => {
     res.json("Hello");
