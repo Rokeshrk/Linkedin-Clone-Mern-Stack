@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 //const config = require('config');
-const db = "mongodb+srv://Rokeshrk:nadAUGhIf6ItHYPs@cluster0.ynacqbs.mongodb.net/devconnector?retryWrites=true&w=majority"
+const db = "mongodb+srv://rokeshrk:vOYkw9HsWCNxj1I9@cluster0.ynacqbs.mongodb.net/?retryWrites=true&w=majority";
 
 const connectDB = async () => {
   try {
@@ -13,10 +13,12 @@ const connectDB = async () => {
 
     console.log("MongoDB Connected...");
   } catch (err) {
+    console.log("error is here");
     console.error(err.message);
-    // Exit process with failure
     process.exit(1);
   }
 };
 
 module.exports = connectDB;
+
+
