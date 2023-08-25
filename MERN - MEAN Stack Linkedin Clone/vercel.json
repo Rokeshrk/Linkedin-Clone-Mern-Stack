@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "build": {
+        "server": "nodemon server",
+        "client": "npm start --prefix clientReact",
+        "src": "concurrently \"npm run server\" \"npm run client\"",
+        "use":"@vercel/node"
+    },
+    "routes":{
+        "src":"/(.*)",
+        "dest":"/"
+    }
+
+}
